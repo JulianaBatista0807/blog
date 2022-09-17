@@ -6,6 +6,6 @@ class Postagem(models.Model):
     autor = models.CharField(max_length=50) 
     email = models.EmailField()
     conteudo = models.TextField()
+    comentario = models.CharField(max_length=100)
     data_publicacao = models.DateField(auto_now_add=True)
     nota = models.PositiveIntegerField()
-    imagem = models.ImageField()

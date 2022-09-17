@@ -13,7 +13,7 @@
     <ul>
     {% for postagem in postagens %}
 
-        <li><a href="{% url 'leitura_postagem' postagem.id %}">{{ postagem.titulo }}</a>  --  {{ postagem.data_publicacao }} -- {{postagem.email}}</li>
+        <li><a href="{% url 'leitura_postagem' postagem.id %}">{{ postagem.titulo }}</a>  --  {{ postagem.data_publicacao }} -- {{postagem.email}} -- {{postagem.comentario}}</li>
 
     {% endfor %}
     </ul>
